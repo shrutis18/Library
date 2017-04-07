@@ -1,9 +1,21 @@
 import { Component } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template :`
+<h1>
+</h1>
+  <nav>
+  	<a routerLink ="/home" routerLinkActive ="active">Home </a>
+  	<a routerLink ="/contact" routerLinkActive ="active">contact Us </a>
+    <a routerLink ="/login" routerLinkActive ="active">Login </a>
+   </nav>
+  <router-outlet></router-outlet>
+
+
+  `
 })
 export class AppComponent {
   title = 'app works!';
