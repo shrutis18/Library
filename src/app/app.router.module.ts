@@ -1,9 +1,9 @@
 import { RouterModule, Routes } from '@angular/router';
 import {NgModule} from '@angular/core';
 import {HomeComponent} from '../Home/home.component';
-import {ContactComponent} from '../contact/contact.component';
+import {RegisterComponent} from '../register/register.component';
 import {LoginComponent} from '../Login/login.component';
-//import { MaterialModule } from '@angular/material';
+import { MaterialModule } from '@angular/material';
 //import { DatePickerModule } from 'ng2-datepicker';
 
 const appRoutes: Routes =[
@@ -19,14 +19,15 @@ const appRoutes: Routes =[
 	},
 
 	{
-		path:'contact',
-		component: ContactComponent
+		path:'register',
+		component: RegisterComponent
 	},
 	{
 
 	    path:'login',
 	    component: LoginComponent
-	}
+	},
+   
 	
 ]
 

@@ -5,9 +5,9 @@ import { HttpModule } from '@angular/http';
 import { Router } from '@angular/router';
 import {AppRoutingModule} from './app.router.module';
 import {HomeComponent} from '../Home/home.component';
-import {ContactComponent} from '../contact/contact.component';
+import {RegisterComponent} from '../register/register.component';
 import {LoginComponent} from '../Login/login.component';
-//import { MaterialModule } from '@angular/material';
+import { MaterialModule } from '@angular/material';
 //import { DatePickerModule } from 'ng2-datepicker';
 
 
@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent,
+    RegisterComponent,
     LoginComponent
   ],
   
@@ -25,8 +25,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
-    // MaterialModule,
+    AppRoutingModule,
+     MaterialModule
     // DatePickerModule
 
 
